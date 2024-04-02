@@ -1,0 +1,15 @@
+/* CSS del fondo del Login */
+body {
+    /* Ubicación de la imagen */
+    background-image: url('../images/fondos/fondoblanconegro.jpg');
+    /* Para dejar la imagen de fondo centrada, vertical yhorizontalmente */
+    background-position: center center;
+    /* La imagen de fondo se reescala automáticamente con el cambio del ancho de ventana del navegador */
+    background-size: cover;
+    /* La imagen se fija en la ventana de visualización para que la altura de la imagen no supere a la del contenido */
+    background-attachment: fixed;
+    /* Para que la imagen de fondo no se repita */
+    background-repeat: no-repeat;
+    /* Se muestra un color de fondo mientras se está cargando la imagen de fondo o si hay problemas para cargarla */
+    background-color: #212121;
+}

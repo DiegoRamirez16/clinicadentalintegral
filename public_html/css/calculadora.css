@@ -1,0 +1,48 @@
+.divcal {
+    padding: 17px 50px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: center;
+}
+.caltxt {
+    text-align: center;
+    color: #FFF;
+    font-size: 19px;
+    font-family: 'Roboto', sans-serif;
+    margin: auto;
+}
+
+.inputcal {
+    margin: auto;
+    padding: 0px 0px;
+    width: 198px;
+    height: 40px;
+    text-align: center;
+    font-size: 19px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.btncal {
+    padding: 0px 18px;
+    margin: 13px 25px;
+    font-size: 15px;
+    font-weight: 600;
+    border: 2px solid #414141;
+    color: white;
+    background-color: transparent;
+    cursor: pointer;
+    border-radius: 10px;
+    text-transform: uppercase;
+    transition: all 0.4s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.btncal:hover {
+    border-color: #0974f1;
+    box-shadow: 0 0 20px rgba(9, 117, 241, 0.8);
+}
+
+.btncal:active {
+    box-shadow: 0 0 10px rgba(9, 117, 241, 0.4);
+}

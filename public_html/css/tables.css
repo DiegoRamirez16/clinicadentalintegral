@@ -1,0 +1,43 @@
+tr {
+    border: black solid 1px;
+}
+
+tr:hover {
+    background-color: rgb(142, 255, 255);
+    
+}
+
+th {
+    text-align: center;
+    width: 0%;
+}
+
+td {
+    text-align: center;
+}
+
+.estado[value="Completada"] {
+    background-color: aquamarine;
+    color: rgb(0, 0, 0);
+}
+
+
+.contentT {
+    background-color: #ffffffab;
+    backdrop-filter: blur(10px);
+}
+
+.paginacion {
+    padding: 8px 0px;
+    background-color: #ffffffab;
+    backdrop-filter: blur(10px);
+    margin: 0px 0px;
+}
+ul.pagination {
+    margin:auto;
+}
+
+.anteriorbtn {
+    transform: scaleX(-1);
+}
+

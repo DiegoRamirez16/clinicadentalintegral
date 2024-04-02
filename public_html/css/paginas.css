@@ -1,0 +1,499 @@
+html body {
+  height: 100%;
+}
+.row {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 0%;
+}
+
+/* CSS Mitad1 pantalla 20% */
+.mitad1 {
+    margin: 0px;
+    padding: 0;
+    position: absolute;
+    margin-top: 0%;
+    width: 15%;
+    column-fill: auto;
+    height: 100%;
+    background-color: #121212;
+}
+/* Icono de usuario */
+.iconouser {
+    margin-top: 5px;
+    text-align: center;
+}
+/* Nombre de usuario */
+.userid {
+    color: #FFF;
+    font-size: 30px;
+    font-family: 'Roboto', sans-serif;
+}
+.line1 {
+  color:#FFF;
+  border: 15px;
+}
+
+.cantdiv {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 39px;
+}
+
+.imgcalendar {
+  margin: auto;
+}
+
+.imgGI {
+  margin: auto;
+  filter: invert(100%);
+}
+
+.canthoytxt {
+  text-align: center;
+  color: #FFF;
+  font-size: 25px;
+  font-family: 'Roboto', sans-serif;
+  margin: auto;
+}
+
+.canthoynum {
+  text-align: center;
+  color: aquamarine;
+  font-size: 25px;
+  font-family: 'Roboto', sans-serif;
+  margin: auto;
+}
+
+/* _________________________________________________________________________ */
+
+/* CSS Mitad2 80% de la pantalla*/
+.mitad2 {
+    float: left;
+    width: 85%;
+    margin-left: 15%;
+    background-color: #f3f3f3;
+    height: 100%;
+}
+
+/* CSS contenido y Boton Agregar */
+
+.contentpage {
+    width: 100%;
+    height: 71px;
+    background: #FFF;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 7px;
+}
+.contentpageOP {
+  width: 100%;
+  height: 71px;
+  background: #000000;
+  display: flex;
+  /* align-items: center; */
+  justify-content: space-between;
+  padding: 0px 7px;
+}
+.addntitle {
+    display: flex;
+    align-items: unset;
+    justify-content: center;
+    padding: 0px 0px;
+    margin-top: 10px;
+}
+.titulolist {
+    color: #000;
+    font-family: 'Roboto', sans-serif;
+    font-size: 28px;
+    font-weight: bold;
+}
+/* Inicio Search Filtrar Cuadro CSS*/
+.searchbox {
+    position: relative;
+  }
+  
+  .searchinput {
+    width: 340px;
+    padding: 10px 0px 10px 40px;
+    border-radius: 9999px;
+    border: solid 1px #333;
+    transition: all .2s ease-in-out;
+    outline: none;
+    opacity: 0.8;
+  }
+  
+  .imgsearch {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translate(0, -50%);
+  }
+  
+  .searchinput:focus {
+    opacity: 1;
+    width: 400px;
+  }
+/* Fin Search Filtrar */
+
+/* Boton Agregar */
+.addbtn {
+    background-color: rgb(255, 255, 255);
+    border: 3px solid black;
+    padding: 0px 14px;
+    border-radius: 22px;
+    box-shadow: 2px 2px 1px  black;
+    transition: all .2s ease;
+    font-size: 22px;
+    font-weight: 800;
+  }
+  
+  .addbtn:hover {
+    transform: translate(-2px, -1px);
+    box-shadow: 7px 7px 1px  rgb(0, 0, 0);
+    transition: all .2s ease-in;
+    background: aquamarine;
+  }
+  
+  .addtxt {
+    color: #000;
+  }
+
+  a {
+    color: #000;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+  }
+
+  a:hover {
+    color: #000;
+    text-decoration: none;
+  }
+
+table {
+    font-family: 'Roboto', sans-serif;
+}
+/* Fin Css boton agregar */
+/* Boton opciones */
+.opcionesbtn {
+  padding: 0px 18px;
+  margin: 13px 25px;
+  font-size: 15px;
+  font-weight: 600;
+  border: 2px solid #414141;
+  color: white;
+  background-color: transparent;
+  cursor: pointer;
+  border-radius: 10px;
+  text-transform: uppercase;
+  transition: all 0.4s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.opcionesbtn:hover {
+  border-color: #0974f1;
+  box-shadow: 0 0 20px rgba(9, 117, 241, 0.8);
+}
+
+.opcionesbtn:active {
+  box-shadow: 0 0 10px rgba(9, 117, 241, 0.4);
+}
+/* Fin Css boton opciones */
+
+/* Inicio CSS Botones Eliminar Registro y Editar */
+/*ELIMINAR*/
+.eliminarbtn {
+    position: relative;
+    font-family: 'Heebo', sans-serif;
+    padding: 14px 14px;
+    border: 0;
+    background: rgb(255 67 76);
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 1em;
+    border-radius: 8px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+  }
+  
+  .eliminarbtn:hover {
+    text-shadow: 0px 5px 10px rgba(0, 0, 0, 0.562);
+    transform: scale(1.01);
+    box-shadow: inset 0px 0px 10px rgba(255, 0, 0, 0.575);
+  }
+  
+  .eliminarbtn::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100px;
+    width: 50%;
+    height: 100%;
+    transform: rotate(80deg);
+    background: #ffffff77;
+    filter: blur(10px);
+    transition: 0.6s ease-in-out;
+  }
+  
+  .eliminarbtn:hover::after {
+    left: 100%;
+  }
+  /*EDITAR*/
+  .editarbtn{
+    position: relative;
+    font-family: 'Heebo', sans-serif;
+    padding: 14px 14px;
+    border: 0;
+    background: aquamarine;
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 1em;
+    border-radius: 8px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+  }
+  
+  .editarbtn:hover {
+    text-shadow: 0px 5px 10px rgba(0, 255, 251, 0.562);
+    transform: scale(1.01);
+    box-shadow: inset 0px 0px 10px rgba(0, 195, 255, 0.575);
+  }
+  
+  .editarbtn::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100px;
+    width: 50%;
+    height: 100%;
+    transform: rotate(80deg);
+    background: #ffffff77;
+    filter: blur(10px);
+    transition: 0.6s ease-in-out;
+  }
+  
+  .editarbtn:hover::after {
+    left: 100%;
+  }
+
+  /* Listar Controles de Expediente boton */
+
+  .listarbtn {
+    position: relative;
+    font-family: 'Heebo', sans-serif;
+    padding: 14px 14px;
+    border: 0;
+    background: rgb(249, 254, 102);
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 1em;
+    border-radius: 8px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+  }
+  
+  .listarbtn:hover {
+    text-shadow: 0px 5px 10px rgba(255, 134, 134, 0.562);
+    transform: scale(1.01);
+    box-shadow: inset 0px 0px 10px rgba(65, 65, 243, 0.575);
+  }
+  
+  .listarbtn::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100px;
+    width: 50%;
+    height: 100%;
+    transform: rotate(80deg);
+    background: #ffffff77;
+    filter: blur(10px);
+    transition: 0.6s ease-in-out;
+  }
+  
+  .listarbtn:hover::after {
+    left: 100%;
+  }
+
+/*Agregar Ctrl*/
+  .addctrlbtn {
+    position: relative;
+    font-family: 'Heebo', sans-serif;
+    padding: 14px 14px;
+    border: 0;
+    background: rgb(142, 255, 255);
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 1em;
+    border-radius: 8px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+  }
+  
+  .addctrlbtn:hover {
+    text-shadow: 0px 5px 10px rgba(0, 255, 251, 0.562);
+    transform: scale(1.01);
+    box-shadow: inset 0px 0px 10px rgba(0, 195, 255, 0.575);
+  }
+  
+  .addctrlbtn::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100px;
+    width: 50%;
+    height: 100%;
+    transform: rotate(80deg);
+    background: #ffffff77;
+    filter: blur(10px);
+    transition: 0.6s ease-in-out;
+  }
+  
+  .addctrlbtn:hover::after {
+    left: 100%;
+  }
+
+/* Fin CSS Botones Eliminar y Editar */
+
+/* Color de la letra paginacion*/
+.page-link {
+    color: #000;
+}
+/* Color al pasar cursor en background y fuente */
+.page-link:hover {
+    background-color: aquamarine;
+    color: #000000;
+}
+/* Estilo de fuente en paginacion */
+.pagination {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Formulario Agregar CSS */
+.contact-form {
+    background-color: #f2f2f2;
+    padding: 22px 44px;
+    border-radius: 10px;
+    width: 700px;
+    /* Centrar formulario */
+    margin: auto;
+  }
+  .agregartxt {
+    color: #000000;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    display: flex;
+    font-size: 30px;
+    justify-content: center;
+}
+  .contact-form label {
+    color: #000000;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+  }
+  
+  .contact-form form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .contact-form label {
+    margin-bottom: 10px;
+  }
+  
+  textarea {
+    resize: none;
+    height: 80px;
+    width: 600px;
+  }
+  
+  .contact-form input, .contact-form textarea {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+  
+  .contact-form input:focus, .contact-form textarea:focus {
+    outline: none;
+    box-shadow: 0 0 5px aquamarine;
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .selectform select:focus {
+    outline: none;
+    box-shadow: 0 0 5px aquamarine;
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+  }
+  /*CSS DIV BTN FORM */
+.formbtn {
+    display: flex;
+    justify-content: space-between;
+}
+  .contact-form .savebtn[type="submit"] {
+    background-color: rgb(142, 255, 255);
+    color: #000000;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    padding: 0px 0px;
+    margin: 10px;
+    width: 142px;
+    font-size: 17px;
+    height: 42px;
+    cursor: pointer;
+  }
+  
+  .contact-form .savebtn[type="submit"]:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+  }
+  .contact-form .cancelbtn[type="button"] {
+    background-color: rgb(255 67 76);
+    color: #000000;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    padding: 0px 0px;
+    margin: 10px;
+    width: 142px;
+    font-size: 17px;
+    height: 42px;
+    cursor: pointer;
+  }
+  
+  .contact-form .cancelbtn[type="button"]:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+  }
+
+/* Formulario REPORTES */
+
+  .contact-form .reportebtn[type="button"] {
+    background-color: rgb(102 216 255);
+    color: #000000;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    padding: 0px 0px;
+    margin: 10px;
+    width: 142px;
+    font-size: 17px;
+    height: 42px;
+    cursor: pointer;
+  }
+  
+  .contact-form .reportebtn[type="button"]:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+  }

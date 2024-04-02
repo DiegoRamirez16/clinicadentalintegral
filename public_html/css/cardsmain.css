@@ -1,0 +1,208 @@
+/* Estilo de las cards de la pagina principal (main)*/
+/* Estilo del card1 Vision */
+/* card con transparencia total del cual dependen los circulos*/
+.card1 {
+  /* Ajustando el tamaño del card aqui podemos situar los circulos*/
+  width: 350px;
+  height: 250px;
+  transition: all 0.2s;
+  /* (Opcional subir transparencia)*/
+  background: rgba(21, 21, 21, 0);
+  --bs-card-border-color: rgba(0, 0, 0, 0);
+  position: relative;
+  cursor: pointer;
+}
+/* Card interno donde esta el texto*/
+.card-inner1 {
+  /* Ajustar tamaño dependiendo la cantidad del texto*/
+  width: 350px;
+  height: 200px;
+  /* Color del card: color #212121 Transpariencia de 0.623 */
+  background: rgba(21, 21, 21, 0.623);
+  box-shadow: 0 0 10px rgba(0,0,0,0.25);
+  backdrop-filter: blur(10px);
+  border-radius: 8px;
+}
+
+.card1:hover {
+  transform: scale(1.04) rotate(1deg);
+}
+/* Circulo superior de Vision */
+.circle1 {
+  width: 100px;
+  height: 100px;
+  background: radial-gradient(#FBCA1F, #f7fb1f);
+  border-radius: 50%;
+  position: absolute;
+  animation: move-up6 2s ease-in infinite alternate-reverse;
+}
+/* Circulo inferior de Vision */
+.circle2 {
+  width: 100px;
+  height: 100px;
+  background: radial-gradient(#bb004e, #ff0080);
+  border-radius: 50%;
+  position: absolute;
+  animation: move-up6 2s ease-in infinite alternate-reverse;
+}
+
+.circle1:nth-child(1) {
+  top: -25px;
+  left: -25px;
+}
+
+.circle2:nth-child(2) {
+  bottom: -25px;
+  right: -25px;
+  animation-name: move-down1;
+}
+
+/* Estilo del card2 Mision */
+/* card con transparencia total del cual dependen los circulos*/
+.card2 {
+  /* Ajustando el tamaño del card aqui podemos situar los circulos*/
+  width: 350px;
+  height: 250px;
+  transition: all 0.2s;
+  /* (Opcional subir transparencia)*/
+  background: rgba(21, 21, 21, 0);
+  --bs-card-border-color: rgba(0, 0, 0, 0);
+  position: relative;
+  cursor: pointer;
+}
+/* Card interno donde esta el texto*/
+.card-inner2 {
+  /* Ajustar tamaño dependiendo la cantidad del texto*/
+  width: 350px;
+  height: 200px;
+  /* Color del card: color #212121 Transpariencia de 0.623 */
+  background: rgba(21, 21, 21, 0.623);
+  box-shadow: 0 0 10px rgba(0,0,0,0.25);
+  backdrop-filter: blur(10px);
+  border-radius: 8px;
+}
+
+.card1:hover {
+  transform: scale(1.04) rotate(1deg);
+}
+/* Circulo superior de Mision */
+.circle3 {
+  width: 100px;
+  height: 100px;
+  background: radial-gradient(#0686c7, #24b4fb);
+  border-radius: 50%;
+  position: absolute;
+  animation: move-up6 2s ease-in infinite alternate-reverse;
+}
+/* Circulo inferior de Mision */
+.circle4 {
+  width: 100px;
+  height: 100px;
+  background: radial-gradient(#129e00, #00ff15);
+  border-radius: 50%;
+  position: absolute;
+  animation: move-up6 2s ease-in infinite alternate-reverse;
+}
+
+.circle3:nth-child(1) {
+  top: -25px;
+  left: -25px;
+}
+
+.circle4:nth-child(2) {
+  bottom: -25px;
+  right: -25px;
+  animation-name: move-down1;
+}
+
+/* VALORES: Estilo del card3 */
+/* card con transparencia total del cual dependen los circulos*/
+.card3 {
+  /* Ajustando el tamaño del card aqui podemos situar los circulos*/
+  width: 350px;
+  height: 250px;
+  transition: all 0.2s;
+  /* (Opcional subir transparencia)*/
+  background: rgba(21, 21, 21, 0);
+  --bs-card-border-color: rgba(0, 0, 0, 0);
+  position: relative;
+  cursor: pointer;
+}
+/* Card interno donde esta el texto*/
+.card-inner3 {
+  /* Ajustar tamaño dependiendo la cantidad del texto*/
+  width: 350px;
+  height: 200px;
+  /* Color del card: color #212121 Transpariencia de 0.623 */
+  background: rgba(21, 21, 21, 0.623);
+  box-shadow: 0 0 10px rgba(0,0,0,0.25);
+  backdrop-filter: blur(10px);
+  border-radius: 8px;
+}
+
+.card1:hover {
+  transform: scale(1.04) rotate(1deg);
+}
+/* Circulo superior de Valores */
+.circle5 {
+  width: 100px;
+  height: 100px;
+  background: radial-gradient(#00c07a, #00FFA0);
+  border-radius: 50%;
+  position: absolute;
+  animation: move-up6 2s ease-in infinite alternate-reverse;
+}
+/* Circulo inferior de Valores */
+.circle6 {
+  width: 100px;
+  height: 100px;
+  background: radial-gradient(#bbbbbb, #ffffff);
+  border-radius: 50%;
+  position: absolute;
+  animation: move-up6 2s ease-in infinite alternate-reverse;
+}
+
+.circle5:nth-child(1) {
+  top: -25px;
+  left: -25px;
+}
+
+.circle6:nth-child(2) {
+  bottom: -25px;
+  right: -25px;
+  animation-name: move-down1;
+}
+
+/* Animacion */
+  @keyframes move-up6 {
+    to {
+      transform: translateY(-10px);
+    }
+  }
+  
+  @keyframes move-down1 {
+    to {
+      transform: translateY(10px);
+    }
+  }
+/* Texto de los cards */
+.titulo {
+  margin-top: 21px;
+  color: #17C3B2;
+  text-align: center;
+  font-style: bold;
+}
+
+h2 {
+  color: black;
+  font-family: inherit;
+  font-weight: 900;
+  font-size: 21px;
+  border-radius: 0.4em;
+}
+
+.texto {
+  color: white;
+  text-align: center;
+  font-style: italic;
+}

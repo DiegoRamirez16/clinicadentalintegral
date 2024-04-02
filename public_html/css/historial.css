@@ -1,0 +1,56 @@
+/* CSS del fondo del Login */
+body {
+    /* Ubicación de la imagen */
+    background-image: url('../images/fondos/fondoblanconegro.jpg');
+    /* Para dejar la imagen de fondo centrada, vertical yhorizontalmente */
+    background-position: center center;
+    /* La imagen de fondo se reescala automáticamente con el cambio del ancho de ventana del navegador */
+    background-size: cover;
+    /* La imagen se fija en la ventana de visualización para que la altura de la imagen no supere a la del contenido */
+    background-attachment: fixed;
+    /* Para que la imagen de fondo no se repita */
+    background-repeat: no-repeat;
+    /* Se muestra un color de fondo mientras se está cargando la imagen de fondo o si hay problemas para cargarla */
+    background-color: #212121;
+}
+/*_______________________________________________________________________*/
+/* MITAD 1*/
+.mitad1 {
+    margin: 0px;
+    padding: 0;
+    position: absolute;
+    margin-top: 0%;
+    width: 20%;
+    column-fill: auto;
+    height: 100%;
+    background-color: #00000096;
+}
+
+/* Icono de usuario */
+.iconouser {
+    margin-top: 5px;
+    text-align: center;
+}
+
+/* Nombre de usuario */
+.userid {
+    color: #FFF;
+    font-size: 30px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.line1 {
+    color: #FFF;
+    border: 15px;
+}
+
+/* FIN MITAD 1*/
+/*_______________________________________________________________________*/
+/* CSS Mitad2 80% de la pantalla*/
+.mitad2 {
+    float: left;
+    width: 80%;
+    margin-left: 20%;
+    background-color: #f3f3f3;
+    height: 100%;
+}

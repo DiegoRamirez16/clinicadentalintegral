@@ -1,0 +1,206 @@
+/** {
+  border: 1px solid red;
+}*/
+/* CSS del fondo del Login */
+body {
+  /* Ubicación de la imagen */
+  background-image: url('../images/fondos/fondoblanconegro.jpg');
+  /* Para dejar la imagen de fondo centrada, vertical yhorizontalmente */
+  background-position: center center;
+  /* La imagen de fondo se reescala automáticamente con el cambio del ancho de ventana del navegador */
+  background-size: cover;
+  /* La imagen se fija en la ventana de visualización para que la altura de la imagen no supere a la del contenido */
+  background-attachment: fixed;
+  /* Para que la imagen de fondo no se repita */
+  background-repeat: no-repeat;
+  /* Se muestra un color de fondo mientras se está cargando la imagen de fondo o si hay problemas para cargarla */
+  background-color: #21212100;
+}
+/*_______________________________________________________________________*/
+/* MITAD 1*/
+.mitad1 {
+  margin: 0px;
+  padding: 0;
+  position: absolute;
+  margin-top: 0%;
+  width: 20%;
+  column-fill: auto;
+  height: 100%;
+  background-color: #00000096;
+}
+
+/* Icono de usuario */
+.iconouser {
+  margin-top: 5px;
+  text-align: center;
+}
+
+/* Nombre de usuario */
+.userid {
+  color: #FFF;
+  font-size: 30px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.line1 {
+  color: #FFF;
+  border: 15px;
+}
+/* FIN MITAD 1*/
+/*_______________________________________________________________________*/
+
+/*_______________________________________________________________________*/
+.mitad2 {
+  float: left;
+  width: 80%;
+  margin-left: 20%;
+  background-color: #FFF;
+  height: 100%;
+}
+.infopa {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px;
+}
+
+.divfotoinfo {
+  display: grid;
+  justify-content: center;
+  width: 397px;
+}
+
+.infotitle {
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  color: #000;
+}
+.infotxt {
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  color: #000;
+}
+
+.divinfo {
+  display: grid;
+  justify-content: center;
+}
+
+.divopciones {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(200px, 1fr));
+  gap: 20px;
+}
+
+/* Boton Agregar */
+.addbtn {
+  background-color: rgb(255, 255, 255);
+  border: 3px solid black;
+  padding: 0px 14px;
+  border-radius: 22px;
+  box-shadow: 2px 2px 1px black;
+  transition: all .2s ease;
+  font-size: 22px;
+  font-weight: 800;
+}
+
+.addbtn:hover {
+  transform: translate(-2px, -1px);
+  box-shadow: 7px 7px 1px rgb(0, 0, 0);
+  transition: all .2s ease-in;
+  background: aquamarine;
+}
+
+.addtxt {
+  color: #000;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+}
+
+a:hover {
+  color: #000;
+  text-decoration: none;
+}
+/*_______________________________________________________________________*/
+
+.opt {
+  margin: 20px;
+  padding: 20px;
+  width: 300px;
+  height: 200px;
+  min-height: 200px;
+  display: grid;
+  grid-template-rows: 20px 50px 1fr 50px;
+  border-radius: 10px;
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.25);
+  transition: all 0.2s;
+}
+
+.opt:hover {
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.4);
+  transform: scale(1.01);
+}
+
+.opt_link,
+.opt_exit,
+.opt_icon {
+  position: relative;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.opt_link::after {
+  position: absolute;
+  top: 25px;
+  left: 0;
+  content: "";
+  width: 0%;
+  height: 3px;
+  background-color: rgba(255, 255, 255, 0.6);
+  transition: all 0.5s;
+}
+
+.opt_link:hover::after {
+  width: 100%;
+}
+
+.text {
+  color: white;
+  font-size: 2rem;
+}
+
+.opt_exit {
+  grid-row: 1/2;
+  justify-self: end;
+}
+
+.opt_icon {
+  grid-row: 2/3;
+  font-size: 30px;
+  margin-top: -16px;
+}
+
+.opt_title {
+  grid-row: 3/4;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.opt_apply {
+  grid-row: 4/5;
+  align-self: center;
+}
+
+.opt-5 {
+  background: radial-gradient(#4ff960, #5cbff9);
+}
+
+@media (max-width: 1600px) {
+  .opts {
+    justify-content: center;
+  }
+}
